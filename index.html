@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>亦语 - " 以文为语，以字织梦
+山高水远，纸笔相逢 "</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ff6b81'%3E%3Cpath d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E" type="image/svg+xml">
+</head>
+<body>
+    <!-- 全局点击特效容器 -->
+    <div id="click-effect-container"></div>
+    
+    <!-- 主页内容 -->
+    <div id="home-page">
+        <header>
+            <h1>亦语</h1>
+            <button id="search-btn" class="search-button">搜索</button>
+        </header>
+        
+        <!-- 轮播图 -->
+        <section id="carousel" class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="" alt="精选文章" class="carousel-img">
+                    <div class="carousel-caption">
+                        <h3 class="carousel-title"></h3>
+                        <p class="carousel-author"></p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-prev">‹</button>
+            <button class="carousel-next">›</button>
+        </section>
+        
+        <!-- 分类导航 -->
+        <section id="categories" class="categories">
+            <h2>文章分类</h2>
+            <div class="category-list"></div>
+        </section>
+        
+        <!-- 底部内容 -->
+        <footer class="main-footer">
+            <p>关于这个网站的诞生</p>
+            <p>我们常常在书的世界里找到共鸣，那些细腻的情感、深刻的思考，都值得被好好记录。</p>
+            <p>于是有了这个小站——想为喜欢文字的同好们，搭建一个可以自由挥洒的空间。</p>
+            <p>无论是动漫观后感、原创故事，还是日常随笔，在这里，每一段文字都能找到懂它的人。</p>
+            <p>文字是随身携带的避难所，愿你我在此寻得共鸣</p>
+        </footer>
+    </div>
+    
+    <!-- 分类页面 (初始隐藏) -->
+    <div id="category-page" class="page hidden">
+        <header class="sub-header">
+            <button id="back-to-home" class="back-button">返回主页</button>
+            <h1 class="category-title"></h1>
+            <button id="category-search-btn" class="search-button">搜索</button>
+        </header>
+        <section class="article-list"></section>
+        <div class="pagination">
+            <button id="prev-page" class="page-button">上一页</button>
+            <span id="page-info" class="page-info"></span>
+            <button id="next-page" class="page-button">下一页</button>
+        </div>
+    </div>
+    
+    <!-- 搜索页面 (初始隐藏) -->
+    <div id="search-page" class="page hidden">
+        <header class="sub-header">
+            <button id="search-back-to-home" class="back-button">返回主页</button>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="搜索文章标题...">
+                <button id="search-submit" class="search-submit">搜索</button>
+            </div>
+        </header>
+        <section class="search-results"></section>
+        <div class="pagination">
+            <button id="search-prev-page" class="page-button">上一页</button>
+            <span id="search-page-info" class="page-info"></span>
+            <button id="search-next-page" class="page-button">下一页</button>
+        </div>
+    </div>
+    
+    <!-- 文章阅读页面 (初始隐藏) -->
+    <div id="article-page" class="page hidden">
+        <header class="article-header">
+            <button id="article-back" class="back-button">返回</button>
+        </header>
+        <article class="article-content">
+            <h1 class="article-title"></h1>
+            <div class="article-meta">
+                <span class="article-author"></span>
+                <span class="article-date"></span>
+            </div>
+            <div class="article-body"></div>
+        </article>
+    </div>
+    
+    <script src="js/main.js"></script>
+    <script src="js/effects.js"></script>
+</body>
+</html>
