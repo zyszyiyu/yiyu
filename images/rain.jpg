@@ -1,0 +1,62 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rainBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a5568;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d3748;stop-opacity:1" />
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#rainBg)" />
+  <!-- 模糊的背景城市轮廓 -->
+  <g filter="url(#blur)">
+    <rect x="100" y="400" width="40" height="200" fill="#2d3748" />
+    <rect x="160" y="450" width="30" height="150" fill="#2d3748" />
+    <rect x="210" y="380" width="50" height="220" fill="#2d3748" />
+    <rect x="280" y="430" width="40" height="170" fill="#2d3748" />
+    <rect x="340" y="400" width="30" height="200" fill="#2d3748" />
+    <rect x="400" y="420" width="50" height="180" fill="#2d3748" />
+    <rect x="470" y="390" width="40" height="210" fill="#2d3748" />
+    <rect x="530" y="440" width="30" height="160" fill="#2d3748" />
+    <rect x="580" y="410" width="40" height="190" fill="#2d3748" />
+    <rect x="640" y="430" width="30" height="170" fill="#2d3748" />
+  </g>
+  <!-- 雨滴 -->
+  <g>
+    <line x1="100" y1="100" x2="90" y2="120" stroke="#a0aec0" stroke-width="2" opacity="0.5" />
+    <line x1="200" y1="150" x2="190" y2="170" stroke="#a0aec0" stroke-width="2" opacity="0.5" />
+    <line x1="300" y1="80" x2="290" y2="100" stroke="#a0aec0" stroke-width="2" opacity="0.5" />
+    <line x1="400" y1="200" x2="390" y2="220" stroke="#a0aec0" stroke-width="2" opacity="0.5" />
+    <line x1="500" y1="120" x2="490" y2="140" stroke="#a0aec0" stroke-width="2" opacity="0.5" />
+    <line x1="600" y1="180" x2="590" y2="200" stroke="#a0aec0" stroke-width="2" opacity="0.5" />
+    <line x1="700" y1="100" x2="690" y2="120" stroke="#a0aec0" stroke-width="2" opacity="0.5" />
+    <line x1="150" y1="250" x2="140" y2="270" stroke="#a0aec0" stroke-width="2" opacity="0.5" />
+    <line x1="250" y1="300" x2="240" y2="320" stroke="#a0aec0" stroke-width="2" opacity="0.5" />
+    <line x1="350" y1="250" x2="340" y2="270" stroke="#a0aec0" stroke-width="2" opacity="0.5" />
+    <line x1="450" y1="350" x2="440" y2="370" stroke="#a0aec0" stroke-width="2" opacity="0.5" />
+    <line x1="550" y1="300" x2="540" y2="320" stroke="#a0aec0" stroke-width="2" opacity="0.5" />
+    <line x1="650" y1="250" x2="640" y2="270" stroke="#a0aec0" stroke-width="2" opacity="0.5" />
+    <line x1="750" y1="300" x2="740" y2="320" stroke="#a0aec0" stroke-width="2" opacity="0.5" />
+    <line x1="100" y1="400" x2="90" y2="420" stroke="#a0aec0" stroke-width="2" opacity="0.5" />
+    <line x1="200" y1="450" x2="190" y2="470" stroke="#a0aec0" stroke-width="2" opacity="0.5" />
+    <line x1="300" y1="400" x2="290" y2="420" stroke="#a0aec0" stroke-width="2" opacity="0.5" />
+    <line x1="400" y1="500" x2="390" y2="520" stroke="#a0aec0" stroke-width="2" opacity="0.5" />
+    <line x1="500" y1="450" x2="490" y2="470" stroke="#a0aec0" stroke-width="2" opacity="0.5" />
+    <line x1="600" y1="500" x2="590" y2="520" stroke="#a0aec0" stroke-width="2" opacity="0.5" />
+    <line x1="700" y1="400" x2="690" y2="420" stroke="#a0aec0" stroke-width="2" opacity="0.5" />
+  </g>
+  <!-- 雨伞下的人物剪影 -->
+  <g transform="translate(400, 450)">
+    <!-- 雨伞 -->
+    <path d="M0,-100 A100,100 0 0,1 0,0 Z" fill="#4a5568" stroke="#2d3748" stroke-width="2" />
+    <line x1="0" y1="-100" x2="0" y2="-30" stroke="#2d3748" stroke-width="3" />
+    <!-- 人物 -->
+    <circle cx="0" cy="-10" r="15" fill="#2d3748" />
+    <path d="M0,5 L0,50 M-30,50 L30,50" stroke="#2d3748" stroke-width="10" stroke-linecap="round" />
+    <path d="M-25,15 L0,30 M25,15 L0,30" stroke="#2d3748" stroke-width="6" stroke-linecap="round" />
+  </g>
+  <!-- 水洼反光 -->
+  <ellipse cx="400" cy="580" rx="300" ry="20" fill="#718096" opacity="0.3" />
+  <text x="400" y="300" font-family="Arial" font-size="40" font-weight="bold" text-anchor="middle" fill="white" stroke="#a0aec0" stroke-width="2">雨中的回忆</text>
+</svg>

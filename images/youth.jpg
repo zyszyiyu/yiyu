@@ -1,0 +1,80 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="youthBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbb6ce;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f687b3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#youthBg)" />
+  <!-- 阳光 -->
+  <circle cx="700" cy="100" r="80" fill="#ffd700" opacity="0.7" />
+  <!-- 光晕 -->
+  <circle cx="700" cy="100" r="120" fill="#ffd700" opacity="0.3" />
+  <circle cx="700" cy="100" r="160" fill="#ffd700" opacity="0.1" />
+  <!-- 校园建筑轮廓 -->
+  <rect x="100" y="300" width="600" height="200" fill="#e2e8f0" />
+  <rect x="200" y="200" width="400" height="100" fill="#cbd5e0" />
+  <!-- 窗户 -->
+  <g>
+    <rect x="150" y="350" width="50" height="50" fill="#a0aec0" />
+    <rect x="250" y="350" width="50" height="50" fill="#a0aec0" />
+    <rect x="350" y="350" width="50" height="50" fill="#a0aec0" />
+    <rect x="450" y="350" width="50" height="50" fill="#a0aec0" />
+    <rect x="550" y="350" width="50" height="50" fill="#a0aec0" />
+    <rect x="650" y="350" width="50" height="50" fill="#a0aec0" />
+    <rect x="250" y="220" width="50" height="50" fill="#a0aec0" />
+    <rect x="350" y="220" width="50" height="50" fill="#a0aec0" />
+    <rect x="450" y="220" width="50" height="50" fill="#a0aec0" />
+  </g>
+  <!-- 樱花树 -->
+  <g transform="translate(200, 350)">
+    <path d="M0,100 C0,50 -30,0 -10,-50 C10,0 30,50 0,100 Z" fill="#8B4513" />
+    <circle cx="-40" cy="30" r="40" fill="#fbb6ce" opacity="0.8" />
+    <circle cx="40" cy="20" r="30" fill="#fbb6ce" opacity="0.8" />
+    <circle cx="-10" cy="-20" r="35" fill="#fbb6ce" opacity="0.8" />
+    <circle cx="20" cy="-10" r="25" fill="#fbb6ce" opacity="0.8" />
+  </g>
+  <!-- 学生们 -->
+  <g>
+    <!-- 学生1 -->
+    <g transform="translate(300, 450)">
+      <circle cx="0" cy="-30" r="15" fill="#d69e2e" />
+      <path d="M-20,0 L20,0 L15,-30 L-15,-30 Z" fill="#3182ce" />
+      <line x1="-15" y1="0" x2="-25" y2="30" stroke="#2d3748" stroke-width="5" stroke-linecap="round" />
+      <line x1="15" y1="0" x2="25" y2="30" stroke="#2d3748" stroke-width="5" stroke-linecap="round" />
+      <line x1="-10" y1="10" x2="10" y2="10" stroke="#2d3748" stroke-width="5" stroke-linecap="round" />
+    </g>
+    <!-- 学生2 -->
+    <g transform="translate(350, 460)">
+      <circle cx="0" cy="-30" r="15" fill="#d69e2e" />
+      <path d="M-20,0 L20,0 L15,-30 L-15,-30 Z" fill="#3182ce" />
+      <line x1="-15" y1="0" x2="-20" y2="30" stroke="#2d3748" stroke-width="5" stroke-linecap="round" />
+      <line x1="15" y1="0" x2="20" y2="30" stroke="#2d3748" stroke-width="5" stroke-linecap="round" />
+      <line x1="-10" y1="10" x2="10" y2="10" stroke="#2d3748" stroke-width="5" stroke-linecap="round" />
+    </g>
+    <!-- 学生3 -->
+    <g transform="translate(400, 450)">
+      <circle cx="0" cy="-30" r="15" fill="#d69e2e" />
+      <path d="M-20,0 L20,0 L15,-30 L-15,-30 Z" fill="#3182ce" />
+      <line x1="-15" y1="0" x2="-25" y2="30" stroke="#2d3748" stroke-width="5" stroke-linecap="round" />
+      <line x1="15" y1="0" x2="25" y2="30" stroke="#2d3748" stroke-width="5" stroke-linecap="round" />
+      <line x1="-10" y1="10" x2="10" y2="10" stroke="#2d3748" stroke-width="5" stroke-linecap="round" />
+    </g>
+    <!-- 学生4 -->
+    <g transform="translate(450, 460)">
+      <circle cx="0" cy="-30" r="15" fill="#d69e2e" />
+      <path d="M-20,0 L20,0 L15,-30 L-15,-30 Z" fill="#3182ce" />
+      <line x1="-15" y1="0" x2="-20" y2="30" stroke="#2d3748" stroke-width="5" stroke-linecap="round" />
+      <line x1="15" y1="0" x2="20" y2="30" stroke="#2d3748" stroke-width="5" stroke-linecap="round" />
+      <line x1="-10" y1="10" x2="10" y2="10" stroke="#2d3748" stroke-width="5" stroke-linecap="round" />
+    </g>
+  </g>
+  <!-- 相册元素 -->
+  <g transform="translate(500, 250)">
+    <rect x="-50" y="-50" width="100" height="100" fill="white" stroke="#cbd5e0" stroke-width="2" />
+    <rect x="-40" y="-40" width="80" height="60" fill="#ed8936" />
+    <circle cx="0" cy="-10" r="20" fill="#4a5568" opacity="0.3" />
+    <text x="0" y="30" font-family="Arial" font-size="12" text-anchor="middle" fill="#4a5568">回忆</text>
+  </g>
+  <text x="400" y="200" font-family="Arial" font-size="40" font-weight="bold" text-anchor="middle" fill="white" stroke="#f687b3" stroke-width="2">青春纪念册</text>
+</svg>

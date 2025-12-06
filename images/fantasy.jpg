@@ -1,0 +1,72 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fantasyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a202c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d3748;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#ffcc00;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ffcc00;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#fantasyBg)" />
+  <!-- 星星 -->
+  <g>
+    <circle cx="100" cy="100" r="2" fill="white" />
+    <circle cx="200" cy="150" r="1.5" fill="white" />
+    <circle cx="300" cy="80" r="2" fill="white" />
+    <circle cx="400" cy="200" r="1" fill="white" />
+    <circle cx="500" cy="120" r="2.5" fill="white" />
+    <circle cx="600" cy="180" r="1.5" fill="white" />
+    <circle cx="700" cy="100" r="2" fill="white" />
+  </g>
+  <!-- 山脉 -->
+  <path d="M0,400 L100,300 L200,350 L300,280 L400,330 L500,290 L600,340 L700,300 L800,350 L800,600 L0,600 Z" fill="#2d3748" />
+  <!-- 城堡 -->
+  <g transform="translate(400, 350)">
+    <!-- 主塔 -->
+    <rect x="-50" y="-150" width="100" height="150" fill="#4a5568" />
+    <polygon points="-60,-150 0,-220 60,-150" fill="#2d3748" />
+    <!-- 侧塔 -->
+    <rect x="-120" y="-100" width="40" height="100" fill="#4a5568" />
+    <polygon points="-130,-100 -110,-150 -90,-100" fill="#2d3748" />
+    <rect x="80" y="-100" width="40" height="100" fill="#4a5568" />
+    <polygon points="70,-100 90,-150 110,-100" fill="#2d3748" />
+    <!-- 城墙 -->
+    <rect x="-150" y="0" width="300" height="50" fill="#4a5568" />
+    <!-- 窗户 -->
+    <rect x="-40" y="-120" width="20" height="20" fill="#ffcc00" />
+    <rect x="20" y="-120" width="20" height="20" fill="#ffcc00" />
+    <rect x="-110" y="-70" width="20" height="20" fill="#ffcc00" />
+    <rect x="90" y="-70" width="20" height="20" fill="#ffcc00" />
+  </g>
+  <!-- 魔法师 -->
+  <g transform="translate(250, 450)">
+    <!-- 斗篷 -->
+    <path d="M-30,0 C-40,30 -20,80 0,80 C20,80 40,30 30,0 L20,-60 L-20,-60 Z" fill="#4a5568" />
+    <!-- 头部 -->
+    <circle cx="0" cy="-70" r="15" fill="#d69e2e" />
+    <!-- 帽子 -->
+    <path d="M-25,-70 C-25,-110 0,-130 0,-130 C0,-130 25,-110 25,-70 Z" fill="#4a5568" />
+    <!-- 法杖 -->
+    <line x1="0" y1="0" x2="50" y2="-30" stroke="#805ad5" stroke-width="3" />
+    <circle cx="50" cy="-30" r="8" fill="url(#glow)" />
+  </g>
+  <!-- 骑士 -->
+  <g transform="translate(550, 450)">
+    <!-- 身体 -->
+    <rect x="-30" y="-40" width="60" height="80" fill="#2b6cb0" />
+    <!-- 头部 -->
+    <circle cx="0" cy="-60" r="20" fill="#4a5568" />
+    <!-- 手臂 -->
+    <rect x="-50" y="-20" width="20" height="40" fill="#2b6cb0" />
+    <rect x="30" y="-20" width="20" height="40" fill="#2b6cb0" />
+    <!-- 剑 -->
+    <line x1="60" y1="-10" x2="100" y2="-30" stroke="#cbd5e0" stroke-width="5" />
+    <path d="M95,-35 L100,-30 L105,-35" fill="#ecc94b" />
+  </g>
+  <!-- 魔法光束 -->
+  <path d="M280,420 C350,380 450,380 520,420" fill="none" stroke="#805ad5" stroke-width="5" stroke-linecap="round" opacity="0.7" />
+  <path d="M280,430 C350,390 450,390 520,430" fill="none" stroke="#d53f8c" stroke-width="3" stroke-linecap="round" opacity="0.5" />
+  <text x="400" y="250" font-family="Arial" font-size="40" font-weight="bold" text-anchor="middle" fill="#d69e2e" stroke="#4a5568" stroke-width="2">剑与魔法的世界</text>
+</svg>
